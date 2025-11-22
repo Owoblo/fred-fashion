@@ -218,6 +218,56 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+/* Collection / Gallery */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.collection-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.collection-item:hover img {
+    transform: scale(1.1);
+}
+
+.item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: var(--white);
+    padding: 20px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.collection-item:hover .item-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.item-overlay h4 {
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
 /* Promotions */
 .promo-banner {
     background-color: var(--primary-color);
@@ -400,4 +450,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
