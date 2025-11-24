@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F A Fred's Fashion | Men's Wear & Suits</title>
+    <title>Car Bargains Wholesale | Toronto</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for icons, assuming standard fontawesome or similar -->
 </head>
 <body>
 
-    <header>
-        <div class="container header-content">
+    <header class="header">
+        <div class="container header-container">
             <div class="logo">
-                <h1>F A Fred's Fashion</h1>
+                <h1>Car Bargains <span>Wholesale</span></h1>
             </div>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#inventory">Inventory</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#collection">Collection</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#visit">Visit Us</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,192 +31,98 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Elegance in Every Stitch</h2>
-            <p>Premium Men's Suits, Shirts, and Shoes. Specializing in Turkish and Italian Clothing.</p>
-            <a href="#visit" class="btn">Visit Our Store</a>
+            <h2>Only The Best For Less</h2>
+            <p>Wholesale Car Sales • Late Models • Excellent Prices</p>
+            <div class="hero-btns">
+                <a href="#inventory" class="btn btn-primary">View Inventory</a>
+                <a href="tel:+16476792226" class="btn btn-secondary">Call Now</a>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section about-section">
         <div class="container">
             <div class="section-header">
-                <h3>About Us</h3>
-                <p>Curated style for the modern gentleman.</p>
+                <h3>Why Choose Us</h3>
+                <p>We provide late model vehicles at wholesale prices. Experience the difference of buying directly from the source.</p>
             </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Welcome to <strong>F A Fred's Fashion</strong>, your premier destination for high-quality men's wear in Windsor. We take pride in offering an exclusive selection of <strong>Turkish and Italian clothing</strong>, ensuring you look your best for every occasion.</p>
-                    <p>Whether you need a sharp suit for a wedding, business attire, or casual elegance, our collection is curated to meet the highest standards of fashion and comfort.</p>
-                    <p>Meet <strong>Fared</strong>, our owner, known for his personalized service and expert tailoring advice. As our customers say, we are here to help you out in any way you need for a suit.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">🚗</div>
+                    <h4>Late Models</h4>
+                    <p>Access to recent year makes and models in excellent condition.</p>
                 </div>
-                <div class="features">
-                    <div class="feature-item">
-                        <i class="fas fa-wheelchair"></i>
-                        <span>Wheelchair Accessible</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-wifi"></i>
-                        <span>Free Wi-Fi</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-credit-card"></i>
-                        <span>All Payments Accepted</span>
-                    </div>
+                <div class="feature-card">
+                    <div class="icon">💲</div>
+                    <h4>Wholesale Prices</h4>
+                    <p>Get the best value for your money with our competitive pricing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔑</div>
+                    <h4>Curbside Pickup</h4>
+                    <p>Convenient and safe pickup options available for all customers.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="collection" class="section bg-light">
+    <section id="inventory" class="section inventory-section">
         <div class="container">
             <div class="section-header">
-                <h3>Our Collection</h3>
-                <p>Discover our range of premium suits for every occasion.</p>
+                <h3>Featured Inventory</h3>
+                <p>Check out our latest arrivals.</p>
             </div>
-            <div class="collection-grid">
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1594938298603-c8148c47e356?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic Business Suit">
-                    <div class="item-overlay">
-                        <h4>Business Suits</h4>
+            <div class="gallery-grid">
+                <!-- Using the provided images -->
+                <div class="gallery-item">
+                    <img src="1s.jpg" alt="Featured Vehicle 1">
+                    <div class="item-details">
+                        <h4>Featured Selection</h4>
+                        <span class="price">$$</span>
                     </div>
                 </div>
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Wedding Tuxedo">
-                    <div class="item-overlay">
-                        <h4>Wedding Tuxedos</h4>
+                <div class="gallery-item">
+                    <img src="2s.jpeg" alt="Featured Vehicle 2">
+                    <div class="item-details">
+                        <h4>Premium Model</h4>
+                        <span class="price">$$</span>
                     </div>
                 </div>
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Casual Blazer">
-                    <div class="item-overlay">
-                        <h4>Casual Blazers</h4>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Italian Cut Suit">
-                    <div class="item-overlay">
-                        <h4>Italian Cut</h4>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Accessories">
-                    <div class="item-overlay">
-                        <h4>Shoes & Accessories</h4>
-                    </div>
-                </div>
-                <div class="collection-item">
-                    <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Turkish Style">
-                    <div class="item-overlay">
-                        <h4>Turkish Style</h4>
+                <!-- Placeholders for layout demonstration -->
+                <div class="gallery-item placeholder-item">
+                    <div class="placeholder-content">
+                        <span>More Coming Soon</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="promotions" class="section">
+    <section id="contact" class="section contact-section">
         <div class="container">
-            <div class="section-header">
-                <h3>Current Promotions</h3>
-            </div>
-            <div class="promo-banner">
-                <h4>Big Discount: 50% Off Everything!</h4>
-                <p>Don't miss this opportunity. Valid Mar 3, 2025 – Mar 9, 2025</p>
-            </div>
-            <div class="promo-grid">
-                <div class="promo-card">
-                    <h5>Groom's Special</h5>
-                    <p>40% Off for Grooms</p>
-                    <span class="tag">Limited Time</span>
-                </div>
-                <div class="promo-card">
-                    <h5>Tailoring Advice</h5>
-                    <p>Expert input on your fit and style.</p>
-                    <span class="tag">Included</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reviews" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3>What Our Customers Say</h3>
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(217 Reviews)</span>
-                </div>
-            </div>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <strong>Nana T</strong>
-                        <span class="review-date">a week ago</span>
-                    </div>
-                    <p>"Fared is a very nice person. He attended to my concerns and gave his inputs plus helped out with where to get extra help with other tailoring needs. Price is also very affordable. I would recommend him to everyone."</p>
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <strong>Grim Reaper</strong>
-                        <span class="review-date">a week ago</span>
-                    </div>
-                    <p>"Amazing place and the owner is an amazing and kind guy that will help you out in anyway you need for a suit 👌🏼"</p>
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="visit" class="section bg-dark text-white">
-        <div class="container">
-            <div class="contact-grid">
+            <div class="contact-wrapper">
                 <div class="contact-info">
                     <h3>Visit Us</h3>
                     <address>
-                        <i class="fas fa-map-marker-alt"></i> 493 Ouellette Ave, Windsor, ON N9A 4J2, Canada<br>
-                        <i class="fas fa-phone"></i> <a href="tel:+16477354352" style="color: inherit; text-decoration: none;">+1-647-735-4352</a>
+                        <p><strong>Address:</strong><br>68 Millwick Drive<br>Toronto, ON, Canada</p>
+                        <p><strong>Phone:</strong><br><a href="tel:+16476792226">(647) 679-2226</a></p>
+                        <p><strong>Email:</strong><br><a href="mailto:carbargainswholesale@gmail.com">carbargainswholesale@gmail.com</a></p>
+                        <p><strong>Hours:</strong><br>Always Open</p>
                     </address>
-                    
-                    <h4 class="mt-4">Opening Hours</h4>
-                    <ul class="hours-list">
-                        <li><span>Monday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Tuesday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Wednesday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Thursday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Friday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Saturday</span> <span>11:00 AM – 9:00 PM</span></li>
-                        <li><span>Sunday</span> <span>12:00 PM – 8:00 PM</span></li>
-                    </ul>
+                    <div class="social-links">
+                        <a href="https://fb.com/carbargains" target="_blank" class="social-btn">Facebook</a>
+                    </div>
                 </div>
                 <div class="map-container">
-                    <!-- Embedding a placeholder for the map or a real iframe if I had the exact embed code, using a static image placeholder approach for aesthetic or a generic iframe -->
-                    <iframe 
-                        src="https://maps.google.com/maps?q=493%20Ouellette%20Ave%2C%20Windsor%2C%20ON%20N9A%204J2&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.899859345728!2d-79.5516766845012!3d43.75488897911794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b304c5a5a5a5b%3A0x1234567890abcdef!2s68%20Millwick%20Dr%2C%20North%20York%2C%20ON%20M9L%201Y3%2C%20Canada!5e0!3m2!1sen!2sus!4v1634567890000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2025 F A Fred's Fashion. All Rights Reserved.</p>
-            <div class="payment-icons">
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-cc-amex"></i>
-                <i class="fas fa-mobile-alt"></i>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Car Bargains Wholesale. All Rights Reserved.</p>
         </div>
     </footer>
 
